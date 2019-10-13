@@ -28,7 +28,7 @@ namespace TechJobs.Controllers
                 return View("Index");
                 
             }
-            List<Dictionary<string, string>> jobs = new List<Dictionary<string, string>>();
+            IEnumerable<Dictionary<string, string>> jobs = new List<Dictionary<string, string>>();
             if (searchType == "All")
             {
                 jobs = JobData.FindByValue(searchTerm);

@@ -11,8 +11,8 @@ namespace TechJobs.Controllers
     public class TechJobsController : Controller
     {
         
-        internal static Dictionary<string, string> actionChoices = new Dictionary<string, string>();
-        internal static Dictionary<string, string> columnChoices = new Dictionary<string, string>();
+        internal static IDictionary<string, string> actionChoices = new Dictionary<string, string>();
+        internal static IDictionary<string, string> columnChoices = new Dictionary<string, string>();
 
 
         static TechJobsController()
